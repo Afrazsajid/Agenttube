@@ -110,7 +110,7 @@ function SignInCard() {
         {error && <p className="text-red-500 text-sm mt-3 text-center">{error}</p>}
 
         <p className="text-center text-gray-500 dark:text-gray-400 mt-6">
-          Don't have an account? <a href="/signup" className="text-blue-600 hover:underline">Sign up</a>
+          {`Don't have an account? `}<a href="/signup" className="text-blue-600 hover:underline">Sign up</a>
         </p>
       </motion.div>
     </div>
