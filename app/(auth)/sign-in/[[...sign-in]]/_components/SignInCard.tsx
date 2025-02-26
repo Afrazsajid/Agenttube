@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
-import { useTheme } from "next-themes";
+
 
 type OAuthProvider = "oauth_google" | "oauth_github";
 
@@ -18,7 +18,7 @@ function SignInCard() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
-  const { theme } = useTheme();
+
 
   if (!isLoaded)
     return (
