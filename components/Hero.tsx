@@ -31,7 +31,7 @@ export default function Hero() {
       </p>
 
       {/* Input + Button with Glassmorphism */}
-      <div className="mt-8 flex w-full max-w-xl bg-white/10 backdrop-blur-md rounded-lg p-2 shadow-lg gap-4">
+      <div className="mt-8 flex w-full max-w-xl bg-white/10 backdrop-blur-md rounded-lg p-2 shadow-lg gap-4 flex-col lg:flex-row">
         <Input 
           type="text"
           placeholder="Paste YouTube URL"

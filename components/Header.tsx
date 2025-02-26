@@ -1,18 +1,17 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 import React from "react";
 import AgentPulse from "./Agentpuls";
 import {
   SignedIn,
   SignedOut,
-  SignIn,
-  SignInButton,
+
   UserButton,
 } from "@clerk/nextjs";
-import { Button } from "./ui/button";
-import { Moon_Dance } from "next/font/google";
+
+
 import { ModeToggle } from "./MoodToggle";
 
 function Header() {
