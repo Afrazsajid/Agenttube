@@ -33,7 +33,7 @@ function SignInCard() {
     signIn.authenticateWithRedirect({
       strategy: provider,
       redirectUrl: "/verify",
-      redirectUrlComplete: "/dashboard",
+      redirectUrlComplete: "/",
     });
   };
 
