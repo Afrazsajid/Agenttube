@@ -6,6 +6,9 @@ import Usage from "@/components/Usage";
 import { FeatureFlag, featureFlagEvents } from "@/features/flags";
 import YotubeDetails from "@/components/YotubeDetails";
 import { useParams } from "next/navigation";
+import ThumbnailGeneration from "@/components/ThumbnailGeneration";
+import TitleGeneration from "@/components/TitleGeneration";
+import Transcription from "@/components/Transcription";
 
 
 
@@ -24,7 +27,7 @@ function AnalysisPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Left Side */}
         <div
-          className={`order-2 lg:order-1 flex flex-col gap-4 p-0.5 lg:p-4 border-gray-700 ${
+          className={`order-2 lg:order-1 flex flex-col gap-4 p-0.5 lg:p-4 border-gray-200 ${
             theme === "dark"
               ? "bg-[#1E293B] border-gray-600"
               : "bg-white border-gray-200"
@@ -38,7 +41,12 @@ function AnalysisPage() {
             />
           </div>
 
-          <YotubeDetails videoid={videoid}/>
+          <YotubeDetails videoid={videoid} />
+          <ThumbnailGeneration videoid={videoid}/>
+          <TitleGeneration videoid={videoid}/>
+          <Transcription videoid={videoid}/>
+
+
         </div>
 
         {/* Right Side */}

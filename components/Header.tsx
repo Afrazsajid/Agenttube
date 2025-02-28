@@ -16,7 +16,8 @@ import { ModeToggle } from "./MoodToggle";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 left-0 px-0 lg:px-4 dark:bg-gray-900">
+    <header className="sticky top-0 z-50 left-0 px-0 lg:px-4 bg-white/2 dark:bg-gray-900/30 backdrop-blur-lg shadow-md">
+
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">

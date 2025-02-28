@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,6 +87,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

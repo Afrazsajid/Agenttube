@@ -2,7 +2,7 @@ export enum FeatureFlag {
     TRANSCRIPTION = "transcription",
     IMAGE_GENERATION = "image-generation",
     ANALYSE_VIDEO = "video-analysis",
-    TITLE_GENERATIONS = "title-generations",
+    TITLE_GENERATIONS = "tiltle-generation",
     SCRIPT_GENERATION = "script-generation",
   }
   
