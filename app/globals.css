@@ -127,3 +127,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer utilities {
+  .bPDdsy {
+    display: none !important;
+  }
+}
+

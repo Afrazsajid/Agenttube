@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   title: "Agentube - AI Video Analysis & Content Creation Tools",
   description:
     "AI-powered video analysis platform for creators. Generate thumbnails, transcriptions, SEO-friendly titles, shot scripts, and more with intelligent automation.",
+    icons: {
+      icon: [
+             { url: "/icon.png", media: "(prefers-color-scheme: light)" },
+             { url: "/icon.png", media: "(prefers-color-scheme: dark)" },
+           ],
+    },
   keywords: [
     "AI video analysis",
     "video insights",
@@ -30,11 +36,7 @@ export const metadata: Metadata = {
     "viral video strategy",
     "AI-powered content",
   ],
-  icons: {
-    icon: "/icon.png", // Standard favicon
-    shortcut: "/icon.png", // Shortcut icon for quick access
-    apple: "/icon.png", // Apple touch icon (recommended for iOS)
-  },
+  
   openGraph: {
     title: "Agentube - AI Video Analysis & Content Creation Tools",
     description:
@@ -71,6 +73,10 @@ export const metadata: Metadata = {
     "og:updated_time": new Date().toISOString(), // Auto-updates timestamp
   },
 };
+
+
+
+
 
 
 export default function RootLayout({
