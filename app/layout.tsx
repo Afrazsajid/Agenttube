@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Agentube",
     images: [
       {
-        url: "/opengraph1.jpg", // Replace with actual Open Graph image URL
+        url: "/opengraph1.png", // Replace with actual Open Graph image URL
         width: 1200,
         height: 630,
         alt: "Agentube AI Video Analysis & Content Creation Tools",
