@@ -9,6 +9,7 @@ import { useParams } from "next/navigation";
 import ThumbnailGeneration from "@/components/ThumbnailGeneration";
 import TitleGeneration from "@/components/TitleGeneration";
 import Transcription from "@/components/Transcription";
+import AiAgentChat from "@/components/AiAgentChat";
 
 
 
@@ -52,6 +53,7 @@ function AnalysisPage() {
         {/* Right Side */}
         <div className="order-1 lg:order-2 lg:sticky lg:top-20 h-[500px] lg:h-[calc(100vh-6rem)] dark:bg-gradient-to-b from-[#0F172A] to-[#1E293B] dark:text-white ">
           {/* AI Agent Chat Section */}
+          <AiAgentChat videoid={videoid}/>
           <p className="">Chat</p>
         </div>
       </div>
