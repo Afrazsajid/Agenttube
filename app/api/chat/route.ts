@@ -85,7 +85,7 @@ import { streamText } from "ai";
 import { currentUser } from "@clerk/nextjs/server";
 import { getVideoDetails } from "@/actions/getVideoDetails";
 import fecthTranscript from "@/tools/fetch-transcript";
-import ReactMarkDown from "react-markdown"
+
 
 export async function POST(req: Request) {
   const user = await currentUser();
